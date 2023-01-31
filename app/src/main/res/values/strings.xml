@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Monopolist</string>
+    <string name="start">START NEW GAME</string>
+    <string name="red_name">RED</string>
+    <string name="green_name">GREEN</string>
+    <string name="blue_name">BLUE</string>
+    <string name="yellow_name">YELLOW</string>
+</resources>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textColor="@color/purple_700"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/startButton"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="10dp"/>
+
+    <!--    RED-->
+    <LinearLayout
+        android:id="@+id/redLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/divider1"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/redText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/redScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:backgroundTint="@color/red"
+            android:ems="4"
+            android:enabled="false"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/redHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="On start"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+        <ImageButton
+            android:id="@+id/redEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Edit score"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/redPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Pay"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <!--    GREEN-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/greenLayout"
+        android:gravity="left"
+        android:layout_height="50dp"
+        android:layout_below="@+id/redLayout">
+
+            <TextView
+                android:id="@+id/greenText"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:id="@+id/greenScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:backgroundTint="@color/green"
+                android:ems="4"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:textColor="@color/green"
+                android:textSize="28sp" />
+
+            <ImageButton
+                android:id="@+id/greenHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_myplaces"
+                android:contentDescription="On start"/>
+
+            <ImageButton
+                android:id="@+id/greenEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Edit score"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/greenPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Pay"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <!--    BLUE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/blueLayout"
+        android:gravity="left"
+        android:layout_height="50dp"
+        android:layout_below="@+id/greenLayout">
+
+        <TextView
+            android:id="@+id/blueText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="35sp"/>
+
+        <EditText
+            android:id="@+id/blueScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:backgroundTint="@color/blue"
+            android:ems="4"
+            android:enabled="false"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="textEnd"
+            android:textColor="@color/blue"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/blueHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="On start"/>
+
+        <ImageButton
+            android:id="@+id/blueEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Edit score"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/bluePay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Pay"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <!--    YELLOW-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/yellowLayout"
+        android:gravity="left"
+        android:layout_height="50dp"
+        android:layout_below="@+id/blueLayout">
+
+        <TextView
+            android:id="@+id/yellowText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/yellowScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="@+id/yellowText"
+            android:layout_marginStart="10sp"
+            android:backgroundTint="@color/yellow"
+            android:ems="4"
+            android:enabled="false"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="textEnd"
+            android:textColor="@color/yellow"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/yellowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="On start"/>
+
+        <ImageButton
+            android:id="@+id/yellowEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Edit score"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/yellowPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Pay"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+
+    <!--    CALCULATOR-->
+    <RelativeLayout
+        android:id="@+id/calculatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yellowLayout"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="5sp"
+            android:text="EDIT"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginStart="3sp"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@+id/editText"
+            android:backgroundTint="@color/black"
+            android:ems="6"
+            android:enabled="false"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="textEnd"
+            android:textColor="@color/teal_200"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/calculator7"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="3sp"
+            android:backgroundTint="@color/gray"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator8"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator7"
+            android:backgroundTint="@color/gray"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator9"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator8"
+            android:backgroundTint="@color/gray"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator4"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator7"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="3sp"
+            android:backgroundTint="@color/gray"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator5"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator8"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator4"
+            android:backgroundTint="@color/gray"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator6"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator9"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator5"
+            android:backgroundTint="@color/gray"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator1"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator4"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="3sp"
+            android:backgroundTint="@color/gray"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator2"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator5"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator1"
+            android:backgroundTint="@color/gray"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator3"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator6"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator2"
+            android:backgroundTint="@color/gray"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator0"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator1"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="3sp"
+            android:backgroundTint="@color/gray"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculator00"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator2"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator0"
+            android:backgroundTint="@color/gray"
+            android:text="00"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/calculator000"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator3"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator00"
+            android:backgroundTint="@color/gray"
+            android:text="000"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/calculatorPlus"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator0"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="3sp"
+            android:backgroundTint="@color/gray"
+            android:text="+"
+            android:textColor="@color/green"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/calculatorMinus"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator0"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculatorPlus"
+            android:backgroundTint="@color/gray"
+            android:text="-"
+            android:textColor="@color/red"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/calculatorClear"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator000"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculatorMinus"
+            android:backgroundTint="@color/gray"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculateMultiply"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator9"
+            android:backgroundTint="@color/gray"
+            android:text="x"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/calculatorEquals"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/calculator9"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="3sp"
+            android:layout_toEndOf="@+id/calculator6"
+            android:backgroundTint="@color/gray"
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/playingCube"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_below="@+id/calculator6"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@+id/calculator3"
+            android:backgroundTint="@color/lightGreen"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="100sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
